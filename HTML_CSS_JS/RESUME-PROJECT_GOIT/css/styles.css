@@ -11,10 +11,11 @@ body {
 
 img {
   margin-top: 40px;
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
 }
 .wrapper {
-  width: 1200px;
+  width: 90%;
   display: flex;
   padding: 40px;
   margin: 0 auto;
@@ -54,7 +55,8 @@ img {
 .side_bar {
   display: flex;
   flex-direction: column;
-  width: 370px;
+  width: 30%;
+  max-width: 370px;
   background-color: #1e2939;
   padding-bottom: 40px;
   box-shadow: 5px 5px 15px rgba(0.5, 0.5, 0.5, 0.1);
@@ -79,6 +81,7 @@ img {
 .main {
   display: flex;
   flex-direction: column;
+  width: 70%;
   padding: 110px 90px;
   background-color: #ffffff;
   box-shadow: 5px 5px 15px rgba(0.5, 0.5, 0.5, 0.1);
@@ -88,7 +91,7 @@ img {
 }
 .main-info-h2 {
   margin-bottom: 24px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .main-info-name {
   font-size: 45px;
@@ -103,7 +106,7 @@ img {
 }
 .main_title {
   margin-bottom: 18px;
-  font-size: 22px;
+  font-size: 24px;
 }
 .main_kind_of {
   font-size: 14px;
@@ -133,27 +136,50 @@ img {
 }
 .projects_link {
   color: #595959;
-  border-bottom: #595959 1px dotted;
-  width: 280px;
-  line-height: 10px;
+  line-height: 15px;
   display: inline-block;
+  border-bottom: #595959 1px dotted;
+  width: 320px;
   margin-bottom: 5px;
+  padding-left: 5px;
 }
 .main_title_projects_list {
   margin-left: 15px;
   font-weight: 700;
 }
+.right {
+  position: left;
+}
 .fw_regular {
   font-weight: 400;
   text-decoration: none;
 }
-.project_tech {
-}
-.main_title_H4 {
-  font-size: 16px;
-  margin-bottom: 5px;
-  margin-top: 20px;
-}
 .main-edu {
+  height: 480px;
   margin-top: 55px;
+  margin-bottom: 21px;
+}
+.edu-place {
+}
+.edu-title {
+  color: #ff6b08;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+.edu-job {
+  margin-bottom: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.edu-timeCountry {
+  color: #595959;
+  margin-bottom: 18px;
+  font-size: 12px;
+}
+.edu-time {
+}
+.edu-country {
+  margin-left: 5px;
+  padding-left: 5px;
+  border-left: 2px #595959 dotted;
 }
