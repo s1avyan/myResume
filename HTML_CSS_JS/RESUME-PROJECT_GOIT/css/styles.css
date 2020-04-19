@@ -15,7 +15,8 @@ img {
   max-width: 370px;
 }
 .wrapper {
-  width: 90%;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   padding: 40px;
   margin: 0 auto;
@@ -23,6 +24,7 @@ img {
   -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
 .side_bar_contacts {
   margin-left: 40px;
   margin-top: 60px;
@@ -111,6 +113,9 @@ img {
 .main_kind_of {
   font-size: 14px;
 }
+.main__workplace {
+  margin: 10px 0;
+}
 .main_place {
   color: #ff6b08;
   margin-top: 15px;
@@ -120,7 +125,6 @@ img {
   color: #7c7c7c;
   font-size: 12px;
   font-weight: 400;
-  line-height: 10px;
 }
 .main_country {
   border-left: black 1px solid;
@@ -134,12 +138,20 @@ img {
   margin-bottom: 10px;
   color: #595959;
 }
+.portfolio {
+  display: flex;
+  width: 100%;
+}
+.portfolio__link {
+  border-bottom: #595959 1px dotted;
+  height: 18px;
+  width: 60%;
+}
+.portfolio__tech {
+  width: 40%;
+}
 .projects_link {
   color: #595959;
-  line-height: 15px;
-  display: inline-block;
-  border-bottom: #595959 1px dotted;
-  width: 320px;
   margin-bottom: 5px;
   padding-left: 5px;
 }
@@ -155,7 +167,6 @@ img {
   text-decoration: none;
 }
 .main-edu {
-  height: 480px;
   margin-top: 55px;
   margin-bottom: 21px;
 }
@@ -182,4 +193,89 @@ img {
   margin-left: 5px;
   padding-left: 5px;
   border-left: 2px #595959 dotted;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 970px;
+  }
+  .fw_regular {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .main {
+    padding: 40px;
+  }
+  .portfolio__link {
+    width: 55%;
+  }
+  .portfolio__tech {
+    width: 45%;
+  }
+  .side_bar_contacts {
+    margin: 20px;
+  }
+  .contacts_type {
+    display: none;
+  }
+  .contacts_link {
+    margin: 0;
+  }
+  .side_bar_tech_skils {
+    margin: 20px;
+  }
+  .side_bar_soft_skils {
+    margin: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: none;
+    flex-direction: column;
+  }
+  img {
+    max-width: none;
+    width: 80%;
+    align-self: center;
+  }
+  .side_bar {
+    max-width: 767px;
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+    padding: 20px;
+  }
+  .main-info-name {
+    margin-bottom: 12px;
+  }
+  .side_bar {
+    width: 100%;
+  }
+  .portfolio__link {
+    width: 60%;
+  }
+  .portfolio__tech {
+    width: 40%;
+  }
+  .contacts_type {
+    display: inline-block;
+  }
+  .contacts_link {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 484px) {
+  .portfolio {
+    flex-direction: column;
+  }
+  .portfolio__link {
+    width: 90%;
+  }
+  .portfolio__tech {
+    width: 90%;
+  }
+  .main-info-name {
+    font-size: 26px;
+  }
 }

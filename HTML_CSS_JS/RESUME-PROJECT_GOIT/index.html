@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width= device-width" />
     <title>My resume</title>
   </head>
   <body>
@@ -55,12 +55,22 @@
           <h3 class="main_title">Projects</h3>
           <ol class="main_title_projects_list">
             <li>
-              <a class="projects_link fw_regular" href="https://s1avyan.netlify.app/"> - > T H I S R E S U M E < -</a>
-              <span><b>[ </b><span class="fw_regular">HTML5, CSS3</span> <b>]</b></span>
+              <div class="portfolio">
+                <div class="portfolio__link"><a class="projects_link fw_regular" href="https://s1avyan.netlify.app/">ThisResume</a></div>
+                <div class="portfolio__tech">
+                  <span><b>[ </b><span class="fw_regular">HTML5, CSS3</span> <b>]</b></span>
+                </div>
+              </div>
             </li>
             <li>
-              <a class="projects_link fw_regular" href="https://volleystat.netlify.app/">countPanelForVolley</a>
-              <span><b>[ </b><span class="fw_regular">JavaScript, JQuery</span> <b> ]</b></span>
+              <div class="portfolio">
+                <div class="portfolio__link">
+                  <a class="projects_link fw_regular" href="https://volleystat.netlify.app/">countPanelForVolley</a>
+                </div>
+                <div class="portfolio__tech">
+                  <span class="fw_regular"><b>[ </b>JavaScript, JQuery<b> ]</b></span>
+                </div>
+              </div>
             </li>
           </ol>
         </div>
@@ -73,14 +83,16 @@
               <span>not IT</span>
               <span class="main_place">Freelance</span>
             </h4>
-            <span class="main_data">September 2015 - up to now</span>
-            <span class="main_country main_data">Ukraine</span>
-            <ul>
-              <li class="main_list">Организация и проведение спортивных мероприятий</li>
-              <li class="main_list">Взаимодействие с горсоветом и исполкомом</li>
-              <li class="main_list">Тренерская деятельность</li>
-              <li class="main_list">Работа с людьми</li>
-            </ul>
+            <div class="main__workplace">
+              <span class="main_data">September 2015 - up to now</span>
+              <span class="main_country main_data">Ukraine</span>
+              <ul>
+                <li class="main_list">Организация и проведение спортивных мероприятий</li>
+                <li class="main_list">Взаимодействие с горсоветом и исполкомом</li>
+                <li class="main_list">Тренерская деятельность</li>
+                <li class="main_list">Работа с людьми</li>
+              </ul>
+            </div>
           </div>
 
           <!--Образование-->
