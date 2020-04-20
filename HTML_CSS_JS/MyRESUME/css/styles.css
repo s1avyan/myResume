@@ -147,6 +147,13 @@ img {
   display: flex;
   width: 100%;
 }
+.fa-star {
+  opacity: 0.4;
+}
+.fa-star.checked {
+  opacity: 1;
+  color: rgb(233, 230, 47);
+}
 .portfolio__link {
   border-bottom: #595959 1px dotted;
   height: 18px;
