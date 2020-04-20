@@ -1,0 +1,43 @@
+/*Слайдер в целом*/
+/*Сам слайдер*/
+.slick-slider {
+}
+/*Ограничивающая оболочка*/
+.slick-list {
+}
+/*Лента слайдов*/
+.slick-track {
+}
+/*Отдельный слайд*/
+/*Слайд*/
+.slick-slide {
+}
+/*Слайд активный*/
+.slick-slide.slick-active {
+}
+/*Слайд основной*/
+.slick-slide.slick-current {
+}
+/*Слайд по центру*/
+.slick-slide.slick-center {
+}
+/*Стрелки*/
+/*Стрелка*/
+.slick-arrow {
+}
+/*Стрелка влево*/
+.slick-arrow.slick-prev {
+}
+/*Стрелка вправо*/
+.slick-arrow.slick-next {
+}
+/*Стрелка не активная*/
+.slick-arrow.slick-disabled {
+}
+/*Точки*/
+.slick.dots {
+}
+.slick.dots li {
+}
+.slick.dots button {
+}
