@@ -233,9 +233,14 @@ img {
   }
 }
 @media (max-width: 767px) {
+  body {
+    padding: 20px;
+    transition: all 0.3s ease 0.5s;
+  }
   .wrapper {
     max-width: none;
     flex-direction: column;
+    padding: 20px;
   }
   .slider__item {
     max-width: none;
@@ -270,6 +275,12 @@ img {
   }
 }
 @media (max-width: 484px) {
+  body {
+    padding: 5px;
+  }
+  .wrapper {
+    padding: 10px;
+  }
   .portfolio {
     flex-direction: column;
   }
