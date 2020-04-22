@@ -255,14 +255,31 @@
     <!--Отображаемое табло-->
     <!--Separator-->
     <!--Вспомогательныая панель-->
-    <div class="CP CP1 list">
+    <div class="CP CP1">
       <div class="inline">
-        <div class="inline"><span>ColorTeam 1</span>></div>
-        <div class="inline"></div>
+        <div class="inline">
+          <input
+            id="team1name"
+            tabindex="1"
+            placeholder="DreamTeam 1"
+            maxlength="15"
+            class="namecom1"
+          />
+        </div>
+        <div class="inline">
+          <!--          <button type="button" onclick="morePointForTeam1()" accesskey="q">+</button>
+        </div>
+        <div class="inline">
+            <button type="button" onclick="lessPointForTeam1()" accesskey="w">-</button> -->
+        </div>
       </div>
       <div class="inline vibor_cveta">
         <div id="team1color1" class="color col1" data-col="54D544"></div>
         <div id="team1color2" class="color col1" data-col="F66d2f"></div>
+        <!--     <div id="team1color3" class="color col1" data-col='FFFFFF'></div>
+        <div id="team1color4" class="color col1" data-col='FF9700'></div>
+        <div id="team1color5" class="color col1" data-col='00FFFF'></div>
+        <div id="team1color6" class="color col1" data-col='FFFF00'></div>   -->
       </div>
       <div class="inline">
         <input
@@ -271,11 +288,23 @@
         />
       </div>
     </div>
-    <div class="CP CP2 list">
-      <span>ColorTeam 2</span>>
+    <div class="CP CP2">
+      <input
+        id="team2name"
+        tabindex="2"
+        placeholder="DreamTeam 2"
+        maxlength="15"
+        class="namecom2"
+      />
+      <!--   <button type="button" onclick="morePointForTeam2()" accesskey="a">+</button>
+    <button type="button" onclick="lessPointForTeam2()" accesskey="s">-</button>   -->
       <div class="inline vibor_cveta">
         <div id="team2color1" class="color col2" data-col="54D544"></div>
         <div id="team2color2" class="color col2" data-col="F66d2f"></div>
+        <!--      <div id="team2color3" class="color col2" data-col='FFFFFF'></div>
+        <div id="team2color4" class="color col2" data-col='FF9700'></div>
+        <div id="team2color5" class="color col2" data-col='00FFFF'></div>
+        <div id="team2color6" class="color col2" data-col='FFFF00'></div>   -->
       </div>
       <input id="team2colorCustom" class="jscolor team2colorCustom input_cp" />
     </div>

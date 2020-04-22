@@ -50,10 +50,6 @@ $(document).ready(function () {
     var colortest = $(".team1colorCustom").val();
     $("#team1color").css({ background: "#" + colortest });
   });
-  $("#team1name").change(function () {
-    var team1name = $(this).val();
-    $("#team1").html(team1name);
-  });
   $(".team2colorCustom").change(function () {
     var colortest = $(".team2colorCustom").val();
     $("#team2color").css({ background: "#" + colortest });
@@ -139,6 +135,21 @@ $(document).ready(function () {
     if (event.keyCode === 53)
       //5
       $(".button5").click();
+  });
+
+  $(".namecom1").keyup(function () {
+    var team1name = $(this).val();
+    //alert("asd");
+    console.log("asd");
+    $("#team1").html(team1name);
+    $(".team1name").html(team1name);
+  });
+  $(".namecom2").keyup(function () {
+    var team2name = $(this).val();
+    //alert("asd");
+    console.log("asd");
+    $("#team2").html(team2name);
+    $(".team2name").html(team2name);
   });
 });
 
