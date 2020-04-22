@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 body {
+  ali: 50;
 }
 .wrapper {
   position: relative;
@@ -18,7 +19,6 @@ body {
 .container {
   display: flex;
   width: 100%;
-  fonts
 }
 .about {
   background-color: #e8d966b2;
