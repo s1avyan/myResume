@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>::-ms-expand</title>
+    <style>
+      .expand {
+        border: none;
+        /* Убираем рамку */
+      }
+
+      .expand::-ms-expand {
+        border-radius: 10px;
+        /* Радиус скругления */
+        background: #7cbc0a;
+        /* Цвет фона */
+        color: #fff;
+        /* Цвет текста */
+      }
+    </style>
+  </head>
+
+  <body>
+    <select>
+      <option>Куздра</option>
+      <option>Бокр</option>
+      <option>Бокрёнок</option>
+    </select>
+    <select class="expand">
+      <option>Куздра</option>
+      <option>Бокр</option>
+      <option>Бокрёнок</option>
+    </select>
+  </body>
+</html>

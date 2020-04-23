@@ -1,0 +1,144 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css?family=Lato:400, 300, 700, 900");
+body {
+  font-family: Lato;
+}
+.header {
+  background-image: url("../html_css_js/about/img/header/bg-header.png");
+  text-transform: uppercase;
+  max-width: 100%;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  &__logo-text {
+    font-family: Quicksand;
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 70px;
+    padding-top: 180px;
+    margin-left: 25px;
+    &:after {
+      position: absolute;
+      left: 48.5%;
+      top: 180px;
+      z-index: 0;
+      content: "";
+      height: 80px;
+      width: 80px;
+      border: 3px solid white;
+      transform: rotate(45deg);
+    }
+  }
+  &__main-text {
+    margin-top: 80px;
+  }
+
+  &__-another-text {
+  }
+
+  &__button {
+    margin-top: 180px;
+  }
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid #f2f2f2;
+
+  &__item {
+    text-transform: uppercase;
+    margin: 15px 25px;
+  }
+  &:after {
+  }
+}
+
+.about {
+  &_header {
+    margin: 0 0 65px 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__body {
+    margin: 0 auto;
+    max-width: 823px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  &__title {
+    margin: 0 0 60px 0;
+  }
+
+  &__text {
+    max-width: 688px;
+    color: #868585;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 26px;
+    margin: 0 auto;
+  }
+
+  &__row {
+    display: flex;
+    margin: 0 -15px;
+    font-size: 0px;
+  }
+
+  &__column {
+    padding: 0 15px;
+    flex: 0 0 33.333%;
+  }
+}
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  position: relative;
+  text-align: center;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    height: 1px;
+    left: 50%;
+    background-color: #000;
+    margin: 0 0 -30px -25px;
+  }
+}
+.item-about {
+  &__icon {
+    margin: 0 auto;
+    width: 92px;
+    height: 92px;
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    text-align: center;
+    color: #000;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 35px 0;
+  }
+
+  &__text {
+    text-align: center;
+    color: #868585;
+    font-size: 14px;
+  }
+}

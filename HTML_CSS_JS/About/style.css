@@ -1,3 +1,5 @@
+@import "nullstyle.scss";
+@import url(https://fonts.googleapis.com/css?family=Lato:400, 300, 700, 900)
 .about {
   // .about_header
 
@@ -12,6 +14,7 @@
   // .about__title
 
   &__title {
+    margin: 30px;
   }
 
   // .about__text
@@ -30,6 +33,10 @@
   }
 }
 .title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 9px;
 }
 .item-about {
   // .item-about__icon
