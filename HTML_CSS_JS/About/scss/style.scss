@@ -1,43 +1,82 @@
 @import "nullstyle.scss";
 @import url("https://fonts.googleapis.com/css?family=Lato:400, 300, 700, 900");
 body {
+  cursor: default;
   font-family: Lato;
 }
 .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url("../html_css_js/about/img/header/bg-header.png");
   text-transform: uppercase;
   max-width: 100%;
+  color: #fff;
   justify-content: center;
   text-align: center;
-  height: 100vh;
+  height: 1080px;
   &__logo-text {
-    font-family: Quicksand;
-    text-transform: lowercase;
-    color: #fff;
-    font-size: 70px;
-    padding-top: 180px;
-    margin-left: 25px;
-    &:after {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 123px;
+    width: 196px;
+    & img {
+      display: flex;
       position: absolute;
-      left: 48.5%;
-      top: 180px;
-      z-index: 0;
-      content: "";
-      height: 80px;
-      width: 80px;
-      border: 3px solid white;
-      transform: rotate(45deg);
+      left: 50%;
+      top: 165px;
+      margin: 0 0 0 -82px;
     }
   }
   &__main-text {
-    margin-top: 80px;
+    display: flex;
+    font-size: 32px;
+    margin-top: 65px;
+    margin-left: 20px;
+    font-weight: bold;
+    letter-spacing: 7.15px;
   }
-
   &__-another-text {
+    display: flex;
+    letter-spacing: 5px;
+    margin-left: 30px;
+    margin-top: 8px;
+    font-size: 24px;
+    text-transform: lowercase;
   }
-
+  &__separator {
+    display: flex;
+    content: "";
+    position: absolute;
+    width: 104px;
+    height: 2px;
+    left: 50%;
+    background-color: #fff;
+    margin: 26px 0 0 -35px;
+  }
   &__button {
-    margin-top: 180px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 293px;
+    margin-left: 39px;
+    padding: 12px;
+    border: 1px solid white;
+    width: 182px;
+    font-size: 17px;
+    &::after {
+      display: flex;
+      content: "";
+      margin-top: 100px;
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-top: 2px solid #fff;
+      border-left: 2px solid #fff;
+      transform: rotate(-135deg);
+    }
   }
 }
 
@@ -47,35 +86,36 @@ body {
   width: 100%;
   justify-content: center;
   border-bottom: 1px solid #f2f2f2;
-
   &__item {
     text-transform: uppercase;
-    margin: 15px 25px;
-  }
-  &:after {
+    margin: 19px 20px 20px 20px;
+    &:hover {
+      color: #ada074;
+      cursor: pointer;
+    }
   }
 }
 
 .about {
-  &_header {
-    margin: 0 0 65px 0;
+  height: 700px;
+  display: flex;
+  margin-top: 120px;
+  flex-direction: column;
+  &__header {
+    margin: 0 0 65px 10px;
     width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
-
   &__body {
     margin: 0 auto;
-    max-width: 823px;
+    max-width: 1080px;
     text-align: center;
     justify-content: center;
   }
-
   &__title {
     margin: 0 0 60px 0;
   }
-
   &__text {
     max-width: 688px;
     color: #868585;
@@ -87,6 +127,7 @@ body {
   }
 
   &__row {
+    flex-direction: row;
     display: flex;
     margin: 0 -15px;
     font-size: 0px;
@@ -101,7 +142,7 @@ body {
   font-size: 34px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 9px;
+  letter-spacing: 5px;
   position: relative;
   text-align: center;
   &:after {
@@ -133,7 +174,7 @@ body {
     font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 0 0 35px 0;
+    margin: 35px 0 35px 0;
   }
 
   &__text {
@@ -141,4 +182,77 @@ body {
     color: #868585;
     font-size: 14px;
   }
+}
+
+//portfolio
+.portfolio {
+  background-color: #f3f3f3;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  &__content {
+    max-width: 1080px;
+  }
+  &__header {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 9px;
+    font-size: 30px;
+    margin-top: 110px;
+    margin-bottom: 40px;
+    &:after {
+      content: "";
+      position: relative;
+      width: 50px;
+      bottom: 0;
+      height: 1px;
+      left: 50%;
+      background-color: #000;
+      margin-top: 40px;
+      margin-left: -25px;
+    }
+  }
+
+  &__nav {
+    align-items: center;
+    width: 30%;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  &__nav-item {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    flex-direction: row;
+    align-content: space-around;
+    margin-bottom: 130px;
+  }
+
+  &__main {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 5px;
+    width: 525px;
+    height: 360px;
+  }
+  &__button {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+.button {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid black;
+  width: 182px;
+  font-size: 17px;
 }
