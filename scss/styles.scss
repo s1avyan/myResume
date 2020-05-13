@@ -10,6 +10,7 @@ html,
 body {
   width: 100%;
 }
+//  Projects container
 .main {
   & span {
     font-size: 20px;
@@ -23,6 +24,8 @@ body {
     display: none;
   }
 }
+
+//  burgerMenu
 .header {
   &__burger {
     display: none;
@@ -49,6 +52,8 @@ body {
     color: #ffffff;
   }
 }
+//  /burgerMenu
+
 @media (max-width: 768px) {
   .main__menu {
     display: flex;
@@ -65,12 +70,12 @@ body {
       position: absolute;
       top: 0;
       left: 0;
+      opacity: 0.95;
       width: 100%;
       height: 100%;
-      background-color: #5e5373;
+      background-color: #1e2939;
     }
   }
-
   .header__list {
     display: none;
   }

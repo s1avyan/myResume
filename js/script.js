@@ -9,8 +9,10 @@ $(document).ready(function () {
     centerMode: false,
     speed: 1000,
     variableWidth: false,
+    waitForAnimate: false,
+    infinite: false,
   });
-  // настройки сликслайдера
+  // --настройки сликслайдера
 
   $('.header__burger').click(function (event) {
     $('.header__burger').toggleClass('active');
@@ -25,9 +27,9 @@ function sumTwoSmallestNumbers(numbers) {
     return a - b;
   });
   answer = numbers[0] + numbers[1];
-  // console.log('Answer is :=> ' + answer);
-}
-sumTwoSmallestNumbers(x);
+  console.log('Answer is :=> ' + answer);
+} // --сложение двух меньших значений списка
+
 // тренировка CODEWARS 8kyu (Remove String Spaces)
 string = "8 j 8   mBliB8g  imjB8B8  jl  B'), '8j8mBliB8gimjB8B8jlB";
 function noSpace(string_to_split, separator) {
@@ -38,3 +40,4 @@ function noSpace(string_to_split, separator) {
 }
 sep = ' ';
 noSpace(string, ' ');
+// --Remove String Spaces
