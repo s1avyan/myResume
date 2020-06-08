@@ -8,7 +8,7 @@
   border: 0;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 40px;
   background-color: #f5f7fa;
 }
@@ -38,11 +38,16 @@ img {
   font-weight: 700;
 }
 .contacts_link {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: gray;
   margin-left: 10px;
+  text-decoration: none;
+}
+.contacts_link:hover {
+  color: mediumseagreen;
+  font-weight: 700;
 }
 .side_bar_tech_skils {
   margin-left: 40px;
@@ -77,6 +82,11 @@ img {
 .aside_list_text {
   color: #fff;
   text-decoration: none;
+}
+a.aside_list_text:hover {
+  cursor: pointer;
+  color: mediumseagreen;
+  font-weight: 700;
 }
 .aside_title {
   color: #fff;
@@ -168,6 +178,12 @@ img {
   margin-bottom: 5px;
   padding-left: 5px;
 }
+.projects_link:hover,
+.projects_link:focus,
+.projects_link:active {
+  color: mediumseagreen;
+  font-weight: 700;
+}
 .main_title_projects_list {
   margin-left: 15px;
   font-weight: 700;
@@ -239,6 +255,7 @@ img {
   .contacts_link {
     margin: 0;
   }
+
   .side_bar_tech_skils {
     margin: 20px;
   }
@@ -276,10 +293,10 @@ img {
     width: 100%;
   }
   .portfolio__link {
-    width: 60%;
+    width: 40%;
   }
   .portfolio__tech {
-    width: 40%;
+    width: 60%;
   }
   .contacts_type {
     display: inline-block;
@@ -296,10 +313,10 @@ img {
     padding: 10px;
   }
   .portfolio__link {
-    width: 90%;
+    width: 50%;
   }
   .portfolio__tech {
-    width: 90%;
+    width: 50%;
   }
   .main-info-name {
     font-size: 26px;
@@ -379,11 +396,11 @@ img {
 }
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background: url("../img/navButtons/left.png") 0 0 / 100% no-repeat;
+  background: url('../img/navButtons/left.png') 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url("../img/navButtons/right.png") 0 0 / 100% no-repeat;
+  background: url('../img/navButtons/right.png') 0 0 / 100% no-repeat;
 }
 .slider .slider__item {
   opacity: 0.4;
