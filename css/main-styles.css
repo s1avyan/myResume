@@ -199,8 +199,6 @@ a.aside_list_text:hover {
   margin-top: 55px;
   margin-bottom: 21px;
 }
-.edu-place {
-}
 .edu-title {
   color: #ff6b08;
   font-size: 16px;
@@ -215,8 +213,6 @@ a.aside_list_text:hover {
   color: #595959;
   margin-bottom: 18px;
   font-size: 12px;
-}
-.edu-time {
 }
 .edu-country {
   margin-left: 5px;
@@ -324,8 +320,6 @@ a.aside_list_text:hover {
 }
 /*Слайдер в целом*/
 /*Сам слайдер*/
-.slick-slider {
-}
 /*Ограничивающая оболочка*/
 .slick-list {
   overflow: hidden;
@@ -337,30 +331,14 @@ a.aside_list_text:hover {
 }
 /*Отдельный слайд*/
 /*Слайд*/
-.slick-slide {
-}
 /*Слайд активный*/
-.slick-slide.slick-active {
-}
 /*Слайд основной*/
-.slick-slide.slick-current {
-}
 /*Слайд по центру*/
-.slick-slide.slick-center {
-}
 /*Стрелки*/
 /*Стрелка*/
-.slick-arrow {
-}
 /*Стрелка влево*/
-.slick-arrow.slick-prev {
-}
 /*Стрелка вправо*/
-.slick-arrow.slick-next {
-}
 /*Стрелка не активная*/
-.slick-arrow.slick-disabled {
-}
 /*Точки*/
 .slider .slick-dots {
   position: relative;
